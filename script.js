@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const emailId = document.getElementById("email-id");
   const nextButton = document.getElementById("next-button");
 
+
   function checkFormValidity() {
     return (
       passengerName.value.trim() !== "" &&
