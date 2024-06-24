@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const emailId = document.getElementById("email-id");
   const nextButton = document.getElementById("next-button");
 
-  // Function to check if all required fields are filled
   function checkFormValidity() {
     return (
       passengerName.value.trim() !== "" &&
@@ -98,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 
-  // Function to enable/disable the Next button based on form validity
   function updateNextButtonState() {
     if (checkFormValidity()) {
       nextButton.removeAttribute("disabled");
@@ -106,8 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
       nextButton.setAttribute("disabled", "true");
     }
   }
-
-  // Event listeners for input fields to update Next button state
   passengerName.addEventListener("input", updateNextButtonState);
   phoneNumber.addEventListener("input", updateNextButtonState);
   emailId.addEventListener("input", updateNextButtonState);
